@@ -41,8 +41,8 @@ public class Main {
             System.out.println(i + ". " + hand.toString() + " - " + new HandEvaluator(hand).getCombination());
         }
 
-//        // Находим победителя
-//        Hand winnerHand = hands.stream().max(Hand::compareTo).orElse(null);
-//        System.out.println("\nИгрок " + hands.indexOf(winnerHand) + " выиграл!");
+        // Находим победителя
+        Hand winnerHand = hands.stream().max(Hand::compareTo).orElse(null);
+        System.out.println("\nИгрок " + hands.indexOf(winnerHand) + " выиграл!");
     }
 }
